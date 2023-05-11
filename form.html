@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <title>main</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/index.html" class="header__return">
+                    <img class="header__return-img" src="img/return.svg" alt="arrow">
+                </a>
+                <a href="/" class="header__logo">
+                    <img class="header__logo-img" src="img/logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="create">
+        <div class="container">
+            <h1 class="create__title">Create profile</h1>
+            <form id="myForm" class="create__form">
+                <label class="create__form-label" for="name">
+                    Full name
+                    <input class="create__form-input" type="text" name="name" placeholder="Full name" required pattern="[a-zA-Z]+">
+                </label>
+                <label class="create__form-label" for="your-name">
+                    Your name
+                    <input class="create__form-input" type="text" name="your-name" placeholder="Name" required pattern="[a-zA-Z]+">
+                </label>
+                <label class="create__form-label" for="Country">
+                    Your country
+                    <input class="create__form-input" type="text" name="Country" placeholder="Country" required pattern="[a-zA-Z]+">
+                </label>               
+                <span class="create__form-title" for="gender">Your gender</span>
+                    <div class="toggle__inner">
+                        <label>
+                            <input type="radio" name="gender" class="create__form-toggle--real" required>
+                            <span class="create__form-toggle--fake">Mail</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" class="create__form-toggle--real" required>
+                            <span class="create__form-toggle--fake">Femail</span>
+                        </label>
+                    </div>
+                <span class="create__form-title">Your hobbies</span>
+                <div class="create__form-checkbox--inner">
+                <label>
+                    <input class="create__form-checkbox" type="checkbox" >
+                    <span class="create__form-checkbox--real">Music</span>
+                </label>
+                <label>
+                    <input class="create__form-checkbox" type="checkbox" >
+                    <span class="create__form-checkbox--real">Sports</span>
+                </label>
+                <label>
+                    <input class="create__form-checkbox" type="checkbox" >
+                    <span class="create__form-checkbox--real">Travel</span>
+                </label>
+                <label>
+                    <input class="create__form-checkbox" type="checkbox" >
+                    <span class="create__form-checkbox--real">Movies</span>
+                </label>
+            </div>
+            <h2 class="create__title">
+                Search distance
+            </h2>
+            <div class="create__form-range--inner">
+                <input type="text" id="example_id" name="example_name" value=""/>
+            </div>
+            <button class="create__form-btn" id="submit-button" onclick="return validate()">Create profile</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Privacy Policy</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Terms & Conditions</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

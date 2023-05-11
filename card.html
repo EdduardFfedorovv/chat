@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <title>card</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/profile.html" class="header__return">
+                    <img class="header__return-img" src="img/return.svg" alt="arrow">
+                </a>
+                <a href="/" class="header__logo">
+                    <img class="header__logo-img" src="img/logo.svg" alt="logo">
+                </a>
+                <a href="#" class="header__cabinet">
+                    <img src="img/cabinet.svg" alt="cabinet" class="header__cabinet-img">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="card">
+        <div class="container">
+            <div data-id="1" class="card__inner">
+                <div class="card__slider">
+                    <img src="/img/slid.png" alt="slide1" class="card__slider-img">
+                    <img src="/img/slid.png" alt="slide2" class="card__slider-img">
+                    <img src="/img/slid.png" alt="slide3" class="card__slider-img">
+                    <img src="/img/slid.png" alt="slide4" class="card__slider-img">
+                </div>
+                <a href="/chat.html" class="card__btn">
+                    <img src="img/chat.svg" alt="chat" class="card__btn-img">
+                </a>
+                <button class="card__block block">Block the user</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup">
+        <div class="popup__overlay"></div>
+        <div class="popup__inner">
+            <img src="img/popup-close.svg" alt="close" class="popup__close close">
+            <h2 class="popup__title">Are you sure you want to block this user?</h2>
+            <div class="popup__text">
+                This user will be added to   your blocklist
+            </div>
+            <button class="popup__btn block">Block</button>
+            <button class="popup__close-btn close">Cancel</button>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Privacy Policy</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Terms & Conditions</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/card.js"></script>
+</body>
+</div>
+
+</html>
