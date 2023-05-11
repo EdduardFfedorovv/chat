@@ -47,7 +47,7 @@ profileBtn.forEach((btn) => btn.addEventListener('click', () => {
 }))
 
 deleteProfile.addEventListener('click', () => {
-  window.location.href = "/profile.html";
+  window.location.href = "./profile.html";
     for (let i = 0; i < cards.length; i++) {
         if (i == blockedUser) {
           cards[i].remove();

@@ -10,7 +10,7 @@ $("#example_id").ionRangeSlider({
 const form = document.querySelector('form');
   form.addEventListener('submit', (event) => {
     event.preventDefault();
-    window.location.href = "/profile.html";
+    window.location.href = "./profile.html";
   });
   function validate() {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
